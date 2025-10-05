@@ -1,130 +1,141 @@
-Sanchara Vyuha: The Intelligent Urban Transit Grid
+# 🚌 Sanchara Vyuha: The Intelligent Urban Transit Grid
 
-🎥 Demo Video: https://youtu.be/QbDRnvdhE1k
+🎥 *Demo Video:* [Watch Here](https://youtu.be/QbDRnvdhE1k)  
+📂 *Project Repository & Files:* [Access Here](https://drive.google.com/drive/folders/11InUbFcrawQykgF5Wj7FJsMhMq_1EKow?usp=sharing)
 
-📂 Project Repository & Files: https://drive.google.com/drive/folders/11InUbFcrawQykgF5Wj7FJsMhMq_1EKow?usp=sharing
+---
 
-Overview
+## 🌌 Overview
 
-Sanchara Vyuha (“Network of Motion”) is an AI-powered urban transit grid designed to revolutionize Bengaluru’s bus transportation system through real-time analytics, predictive dispatching, and smart commuter integration.
-The project integrates computer vision, machine learning, and data-driven intelligence to ensure optimized routes, reduced wait times, and adaptive mobility operations.
+*Sanchara Vyuha* (“Network of Motion”) is an *AI-powered urban transit grid* designed to revolutionize bus transportation system through *real-time analytics, predictive dispatching, and smart commuter integration*.  
+The project integrates *computer vision, machine learning, and data-driven intelligence* to ensure *optimized routes, reduced wait times, and adaptive mobility operations*.
 
-Vision
+---
 
-Bengaluru’s public transport system caters to millions daily but operates on static schedules that don’t reflect live commuter demand.
-Sanchara Vyuha envisions a future where AI-driven adaptive scheduling and real-time passenger data guide every bus movement, creating an intelligent, responsive, and efficient city transit ecosystem.
+## 🌆 Vision
 
-Problem Statement
+Public transport system caters to millions daily but operates on *static schedules* that don’t reflect *live commuter demand*.  
+*Sanchara Vyuha* envisions a future where *AI-driven adaptive scheduling* and *real-time passenger data* guide every bus movement, creating an *intelligent, responsive, and efficient city transit ecosystem*.
 
-Despite BMTC’s wide reach and infrastructure:
+---
 
-Buses are often overcrowded or underutilized.
+## 🚨 Problem Statement
 
-Commuters face unpredictable wait times.
+Despite BMTC’s wide reach and infrastructure:  
 
-Depot staff lack real-time demand visibility.
+- Buses are often *overcrowded or underutilized*.  
+- Commuters face *unpredictable wait times*.  
+- Depot staff lack *real-time demand visibility*.  
+- Existing systems are *static and not predictive*.  
 
-Existing systems are static and not predictive.
+---
 
-Proposed Solution
+## 💡 Proposed Solution
 
-The project introduces a multi-layered AI-powered architecture integrating the following components:
+The project introduces a *multi-layered AI-powered architecture* integrating the following components:
 
-CCTV-Based Passenger Detection: Real-time passenger counting using YOLOv8 and OpenCV, generating structured data for analytics.
+1. *CCTV-Based Passenger Detection*  
+   Real-time passenger counting using *YOLOv8* and *OpenCV*, generating structured data for analytics.
 
-Centralized Data & API Layer: Flask backend for live updates, data preprocessing, and seamless integration with the dashboard and commuter app.
+2. *Centralized Data & API Layer*  
+   *Flask backend* for live updates, data preprocessing, and seamless integration with the dashboard and commuter app.
 
-Smart Bus Dispatch Engine: Driven by GRU, GBM, and LSTM models to forecast demand, identify peak hours, and recommend bus dispatch.
+3. *Smart Bus Dispatch Engine*  
+   Driven by *GRU, GBM, and LSTM models* to forecast demand, identify peak hours, and recommend bus dispatch.
 
-System Modules
-Depot Dashboard
+---
 
-An interactive dashboard built with Plotly Dash displaying:
+## 🧩 System Modules
 
-Live passenger counts
+### Depot Dashboard
 
-Route heatmaps
+An interactive dashboard built with *Plotly Dash* displaying:
 
-Historical demand trends
+- Live passenger counts  
+- Route heatmaps  
+- Historical demand trends  
+- AI-based dispatch suggestions  
 
-AI-based dispatch suggestions
+### Commuter App
 
-Commuter App
+A *Flutter-based prototype* providing:
 
-A Flutter-based prototype providing:
+- Live bus tracking  
+- Occupancy status visualization  
+- Smart journey planning assistance  
 
-Live bus tracking
+---
 
-Occupancy status visualization
+## 🧠 AI System & Models
 
-Smart journey planning assistance
+| Model | Purpose |
+|-------|---------|
+| *GRU (Gated Recurrent Unit)* | Predicts real-time passenger flow using sequential ETM and CCTV data. |
+| *GBM (Gradient Boosting Machine)* | Optimizes decisions using multiple route and demand metrics. |
+| *LSTM (Long Short-Term Memory)* | Identifies peak-hour patterns and aids the AI Agent in dynamic scheduling. |
+| *AI Agent* | Combines GRU, GBM, and LSTM outputs to determine optimal bus dispatching. |
 
-AI System & Models
+---
 
-GRU (Gated Recurrent Unit): Predicts real-time passenger flow using sequential ETM and CCTV data.
+## 🔄 Real-Time Data Workflow
 
-GBM (Gradient Boosting Machine): Optimizes decisions using multiple route and demand metrics.
+1. CCTV cameras stream passenger data to *YOLOv8* for detection.  
+2. Processed data is sent to *Flask backend → stored in Firebase/MongoDB*.  
+3. Dashboard visualizes *live metrics and predictions*.  
+4. AI Dispatch Engine computes *bus allocation decisions*.  
+5. Commuter App displays *live bus and occupancy updates* to passengers.  
 
-LSTM (Long Short-Term Memory): Identifies peak-hour patterns and aids the AI Agent in dynamic scheduling.
+---
 
-AI Agent: The decision-making core, combining GRU, GBM, and LSTM outputs to determine optimal bus dispatching.
+## ⚙ Technology Stack
 
-Real-Time Data Workflow
+| Component | Tools / Frameworks |
+|-----------|------------------|
+| *AI / ML* | YOLOv8, OpenCV, TensorFlow, GRU, GBM, LSTM |
+| *Backend* | Python, Flask, REST APIs |
+| *Database* | Firebase Realtime DB, MongoDB |
+| *Dashboard* | Plotly Dash, HTML, CSS, Bootstrap |
+| *Mobile App* | Flutter |
+| *Cloud & Version Control* | Google Cloud, GitHub |
 
-CCTV cameras stream passenger data to YOLOv8 for detection.
+---
 
-Processed data sent to Flask backend → stored in Firebase/MongoDB.
+## ✨ Key Innovations
 
-Dashboard visualizes live metrics and predictions.
+- *AI-based Auto Dispatch System* integrating *GRU + GBM + LSTM*  
+- *CCTV Infrastructure Reuse* — no additional hardware required  
+- *Predictive Peak-Hour Forecasting* using time-series modeling  
+- *Data Fusion AI Agent* for intelligent decision-making  
+- *Scalable & Modular Architecture* for multi-city expansion  
 
-AI Dispatch Engine computes bus allocation decisions.
+---
 
-Commuter App displays live bus and occupancy updates to passengers.
+## 🌍 Impact
 
-Technology Stack
+- *BMTC:* Smarter bus allocation, reduced manual scheduling, real-time data insights.  
+- *Commuters:* Lower wait times, improved reliability, and live journey tracking.  
+- *City:* Eco-efficient, intelligent, and future-ready transport grid.  
 
-AI / ML: YOLOv8, OpenCV, TensorFlow, GRU, GBM, LSTM
-Backend: Python, Flask, REST APIs
-Database: Firebase Realtime DB, MongoDB
-Dashboard: Plotly Dash, HTML, CSS, Bootstrap
-Mobile App: Flutter
-Cloud & Version Control: Google Cloud, GitHub
+---
 
-Key Innovations
+## 🚀 Future Scope
 
-AI-based Auto Dispatch System integrating GRU + GBM + LSTM
+- Integration with *BMTC live CCTV networks* for city-scale deployment.  
+- AI-driven *route optimization and predictive scheduling*.  
+- *Edge AI processing* at bus stops for real-time decision autonomy.  
+- Multi-city implementation under *Smart City projects*.  
 
-CCTV Infrastructure Reuse — no additional hardware required
+---
 
-Predictive Peak-Hour Forecasting using time-series modeling
+## 💖 Acknowledgement
 
-Data Fusion AI Agent for intelligent decision-making
+Developed with guidance from *BMTC, **Smart City Bengaluru*, and academic mentors.  
+This project represents a step toward *data-driven public mobility* and *AI-powered smart cities*.  
 
-Scalable & Modular Architecture for multi-city expansion
+---
 
-Impact
+## 👥 Developed By
 
-BMTC: Smarter bus allocation, reduced manual scheduling, real-time data insights.
+*Team TRUST BUILDERS – Smart Mobility Division*  
 
-Commuters: Lower wait times, improved reliability, and live journey tracking.
-
-City: Eco-efficient, intelligent, and future-ready transport grid.
-
-Future Scope
-
-Integration with BMTC live CCTV networks for city-scale deployment.
-
-AI-driven route optimization and predictive scheduling.
-
-Edge AI processing at bus stops for real-time decision autonomy.
-
-Multi-city implementation under Smart City projects.
-
-Acknowledgement
-
-Developed with guidance from BMTC, Smart City Bengaluru, and academic mentors, this project represents a step toward data-driven public mobility and AI-powered smart cities.
-
-Developed By
-Team TRUST BUILDERS – Smart Mobility Division
-
-Turning Data Into Direction — For Every Passenger, Every Journey
+Turning Data Into Direction — For Every Passenger, Every Journey.

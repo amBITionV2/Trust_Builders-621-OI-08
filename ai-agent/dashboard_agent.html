@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"/>
+<title>AI Agent Dispatch (Demo)</title>
+<style>
+ body{font-family:Segoe UI,Roboto,Arial,sans-serif;margin:24px;background:#fafafa;color:#222}
+ .card{background:#fff;border:1px solid #eee;border-radius:10px;margin:16px 0;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+ .hdr{font-weight:600;margin-bottom:8px} .tag{background:#eef;color:#224;border-radius:6px;padding:2px 6px;margin-right:6px}
+ .grid{display:grid;grid-template-columns:1fr;gap:16px;align-items:center}
+ .mini{border-collapse:collapse;width:100%} .mini th,.mini td{border-bottom:1px solid #eee;padding:6px 8px;text-align:left}
+ .mini th{background:#f7f7fb} .reason{background:#f9f9f9;border-left:4px solid #6aa84f;padding:8px;border-radius:6px}
+ .meta{color:#666;font-size:12px}
+</style></head>
+<body>
+<h1>AI Agent Dispatch (Demo)</h1>
+<div class="sub">Generated at 2025-10-04 19:30</div>
+
+    <div class="card">
+      <div class="hdr"><span class="tag">Route</span> 365J &nbsp; <span class="tag">Stop</span> AMC601</div>
+      <div class="grid">
+        <div>
+          <h4>Next 3 hours</h4>
+          <table class="mini">
+            <tr><th>Timestamp</th><th>Pred</th><th>Buses</th></tr>
+            <tr><td>2025-10-04 20:00:00</td><td>105.3</td><td>3</td></tr>
+            <tr><td>2025-10-04 21:00:00</td><td>100.1</td><td>2</td></tr>
+            <tr><td>2025-10-04 22:00:00</td><td>94.8</td><td>2</td></tr>
+          </table>
+          <p class="reason">Fused CCTV(24,9) + ETM(19) + time features; tiny embedding + linear head; hour 18.</p>
+          <p class="meta">Capacity 60, Load factor 0.85</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hdr"><span class="tag">Route</span> 365J &nbsp; <span class="tag">Stop</span> KBS001</div>
+      <div class="grid">
+        <div>
+          <h4>Next 3 hours</h4>
+          <table class="mini">
+            <tr><th>Timestamp</th><th>Pred</th><th>Buses</th></tr>
+            <tr><td>2025-10-04 20:00:00</td><td>111.5</td><td>3</td></tr>
+            <tr><td>2025-10-04 21:00:00</td><td>105.9</td><td>3</td></tr>
+            <tr><td>2025-10-04 22:00:00</td><td>100.3</td><td>2</td></tr>
+          </table>
+          <p class="reason">Fused CCTV(25,9) + ETM(16) + time features; tiny embedding + linear head; hour 18.</p>
+          <p class="meta">Capacity 60, Load factor 0.85</p>
+        </div>
+      </div>
+    </div>
+</body></html>

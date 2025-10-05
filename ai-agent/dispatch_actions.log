@@ -1,0 +1,2 @@
+2025-10-04T18:00:00 | STOP=KBS001 | ACTION=WAIT | ctx={'why': 'buses_needed>=1', 'people_in': 25.0, 'validations': 16.0, 'r_in': np.float64(28.0), 'r_etm': np.float64(17.666666666666668)}
+2025-10-04T18:00:00 | STOP=AMC601 | ACTION=WAIT | ctx={'why': 'buses_needed>=1', 'people_in': 24.0, 'validations': 19.0, 'r_in': np.float64(21.0), 'r_etm': np.float64(15.333333333333334)}

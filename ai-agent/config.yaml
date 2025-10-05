@@ -1,0 +1,10 @@
+data_dir: "C:/Users/HP/Desktop/ai agent"
+cctv_csv: "cctv_counts.csv"
+etm_csv: "etm_transactions.csv"
+peak_csv: "peak_hours_1y.csv" # optional; ignored if missing
+route_id: "365J"
+stops: ["KBS001", "AMC601"]
+capacity: 60
+load_factor: 0.85
+horizon_hours: 3
+window_hours: 6
